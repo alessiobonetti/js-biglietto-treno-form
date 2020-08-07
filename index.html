@@ -64,10 +64,43 @@
     <section id="ticket_calc" class="big_wrapper">
       <h2>Il tuo biglietto</h2>
       <div class="wrapper">
-        <div class="ticket">
-          <div class="passenger_data"></div>
-          <div class="ticket_data"></div>
+        <!-- passenger -->
+        <h3 class="trans_uppercase">Dettaglio passeggeri</h3>
+        <!-- /passenger -->
+        <!-- ticket -->
+        <div class="ticket dsp_flex">
+          <!-- passenger name -->
+          <div class="passenger_data txt_color_black">
+            <h3 class="trans_uppercase txt_color_black">Nome passeggero</h3>
+            <h4 id="stamp_passenger_name" class="trans_uppercase txt_color_black"></h4>
+          </div>
+          <!-- /passenger name -->
+          <!-- ticket data -->
+          <div class="ticket_data">
+            <!-- table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="stamp_offert"></td>
+                  <td id="stamp_seat"></td>
+                  <td id="stamp_code"></td>
+                  <td id="stamp_cost"></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /table -->
+          </div>
+          <!-- /ticket data -->
         </div>
+        <!-- /ticket -->
       </div>
     </section>
     <!-- /ticket calculation section -->
