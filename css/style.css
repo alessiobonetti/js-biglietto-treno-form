@@ -11,6 +11,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* HIDE */
+.dsp_none {
+  display: none;
+}
 /* TITLE */
 
 h1,h2 {
