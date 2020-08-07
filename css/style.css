@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,31 +10,73 @@ body {
   background-color: #B91450;
   font-family: 'Roboto', sans-serif;
 }
+
 /* TITLE */
+
 h1,h2 {
   text-align: center;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.8rem;
+  padding-bottom: 20px;
 }
 
 /* WRAPPER */
+
 .big_wrapper {
-  width: 1280px;
+  width: 80%;
   margin: auto;
   padding: 20px 0;
 }
 
 .wrapper {
+  width: 100%;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #333;
 }
 
+/* BUTTONS */
+
+.btn {
+  margin: 25px 15px;
+  border: 1px solid #999;
+  color: #B91450;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #D3D3D3;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #D400FF;
+}
+
+
+/* PADDINGS */
+.pdn_8 {
+  padding: 8px;
+}
+.pdn_20 {
+  padding: 20px;
+}
+
+.pdn_bottom_20 {
+  padding-bottom: 20px;
+}
+
+
 /* FLEX */
+
 .row {
   display: flex;
+  justify-content: space-around;
+}
+
+.row_btn {
   justify-content: center;
 }
 
@@ -41,4 +85,33 @@ h1,h2 {
   flex-direction: column;
   align-items: center;
   margin: 0 20px ;
+}
+
+
+/* FORM */
+
+.main_form .row .column label {
+  color: #B91450;
+  margin-bottom: 20px;
+}
+
+.main_form .row .column input , .main_form .row .column select {
+  border-radius: 5px;
+  border: 1px solid #B91450;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.main_form .row .column input::placeholder {
+  text-align: center;
+}
+
+.main_form .row .column input:focus , .main_form .row .column select:focus {
+  background-color: #B91450;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.main_form .row .column input:focus::placeholder {
+  color: #fff;
 }
